@@ -1,0 +1,311 @@
+.settingsWrapp {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 100vh;
+    background: var(--primary-black);
+}
+
+.settingsHeader {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.settHeadWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+}
+.settLogoutWrapp {
+    display: grid;
+    align-items: top;
+    justify-items: right;
+}
+.settLogoutIcon {
+    height: 7rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.settLogoutLbl {
+    color: #993A34;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+.settLogoutWrapp {
+    display: grid;
+    align-items: top;
+    justify-items: right;
+}
+
+.settLogoutIcon {
+    height: 7rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.settLogoutLbl {
+    color: #993A34;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    display: block;
+}
+
+.settIconWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: left;
+}
+
+.settMealWrapp{
+    width: 80%;
+}
+
+.settResWrapp{
+    width: 80%;
+}
+
+.settUserWrapp{
+    width: 80%;
+}
+
+.submitUserBtn{
+    margin-top: 2rem;
+}
+
+.settIcon {
+    height: 8rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.15rem black);
+    margin-left: 2rem;
+}
+
+.settHeading {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.settingsMainPart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mainPartHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainPartHeadingWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+}
+
+.settHeaderIconWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: left;
+}
+
+.mainPartHeading {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.settHeaderIcon {
+    height: 6rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.15rem black);
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.allSelectMealsWrapp{
+    overflow-y:scroll ;
+    max-height: 20rem;
+    margin-top: 2rem;
+}
+
+.selectedMealsWrapp{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.allRestLbl{
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+}
+
+.allRestLbl:hover{
+    color: var(--light-green);
+    text-transform: uppercase;
+}
+
+.selected{
+    color: var(--light-green);
+    text-transform: uppercase;
+}
+
+.settingsInput {
+    padding: 1rem;
+    background-color: white;
+    color: var(--primary-black);
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.createNewWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 3rem 0;
+}
+
+.createNewHeading {
+    text-transform: lowercase;
+    color: var(--dark-green);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.settSubmitBtn {
+    background-color: var(--dark-green);
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.settSubmitBtn:hover {
+    background-color: var(--light-green)
+}
+
+.settDisplayBtn {
+    background-color: var(--primary-black);
+    border: 0.1rem solid white;
+    outline: none;
+    color: white;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.settDisplayBtn:hover {
+    background-color: #373c41;
+}
+
+.settSubheadingWrapp {
+    display: grid;
+    align-items: center;
+}
+
+.settSubheading {
+    text-transform: lowercase;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.cetColmWrapper{
+    overflow-y:scroll ;
+    max-height: 20rem;
+    margin-top: 3rem;
+}
+
+.settColm {
+    margin-left: 1rem;
+    color: white;
+    width: 80%;
+    padding: 1rem;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.settDelBtn {
+    background-color: #993A34;
+    margin-left: 1rem;
+    color: white;
+    letter-spacing: 0.3rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.allFilterUsersWrapp{
+    overflow-y: scroll;
+    max-height: 20rem;
+    margin-top: 2rem;
+}
+
+.settDelBtn:hover {
+    background-color: rgb(184, 71, 63);
+}
+
+.submitMealsBtn{
+    margin-top: 2rem;
+}
+
+.settUsernameLbl {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+}
+
+
+.transitionWapper {
+    transition: all 1s ease-in-out;
+}
+
+/*iPad*/
+
+@media (max-width: 768px) {
+    .settingsWrapp {
+        height: auto;
+        grid-template-rows: 2fr 15fr;
+    }
+    .settingsMainPart {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        align-items: center;
+    }
+}
+
+/*laptop*/
+
+@media (min-width: 1030px) and (max-width: 1366px) {
+    .settingsWrapp {
+        height: auto;
+        grid-template-rows: 2fr 10fr; 
+    }
+
+}

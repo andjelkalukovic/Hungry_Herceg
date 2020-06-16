@@ -1,0 +1,461 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    background-color: var(--primary-black);
+    height: 100vh;
+}
+
+.creBtnLink {
+    color: white;
+}
+
+.creBtnLink:hover{
+    border-bottom: 0.3rem solid transparent;
+    color: white;
+}
+
+.active {
+    height: 86vh;
+    margin: 0 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: var(--primary-black);
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 -6px var(--primary-black), 0 6px var(--primary-black), -7px 0 4px -3px rgba(153, 59, 52, 0.37), 7px 0 4px -3px rgba(153, 59, 52, 0.37);
+}
+
+.poll-order-card {
+    position: relative;
+    height: 80%;
+    width: 90%;
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem black;
+    margin: 2rem 0;
+}
+
+.pollRowsWrapp {
+    overflow-y: scroll;
+    max-height: 12rem;
+    width: 98%;
+}
+
+.pollIconWrapp{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.orderInfoLbl {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.activeLblinfo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pollLblNoInfo {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.activePollRow{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 3fr 1fr;
+}
+
+.pollInfoWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+}
+
+.orderLblWrapper{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.pollCardicon {
+    position: absolute;
+    height: 7rem;
+    left: -5%;
+    top: -10%;
+    filter: drop-shadow(0.4rem 0.3rem 0.4rem rgba(243, 238, 238, 0.815));
+}
+
+.active-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.active-polls-info {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 0.3fr;
+    color: var(--primary-black);
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.active-orders-info {
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.3fr;
+    justify-items: center;
+    color: var(--primary-black);
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.active-polls {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.active-orders {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.activeCardsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mainPartWrapper {
+    background: linear-gradient(to bottom, #222629 30%, #474B4F 70%);
+}
+
+.pollsHeaderWrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 98%
+}
+
+.ordersHeaderWrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.pollsHeadingWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card-heading {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(to top right, #6B6E70, #474B4F);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: var(--dark-green);
+}
+
+.card-heading h1 {
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    font-family: 'Amatic SC', cursive;
+}
+
+.card-btn-wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-green {
+    width: 40%;
+    background: var(--dark-green);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 0.4rem;
+    letter-spacing: 0.25rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.6s ease-in-out;
+}
+
+.noActiveInfo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn-green:hover {
+    background: var(--light-green);
+}
+
+.pollGuest {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.pollGuestIcon {
+    height: 2.7rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.voteBtnLink:hover {
+    border-bottom: 0.3rem solid transparent;
+
+}
+.voteBtnLink{
+    padding: 0;
+}
+
+.btn-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.poll-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.activePollBtnIcons{
+    height: 2.7rem;
+    cursor: pointer;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.actOrderIcon{
+    height: 2.7rem;
+    cursor: pointer;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.actOrderIconWrapp{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.activeRow {
+    text-align: center;
+}
+
+.userUnvoteBtn {
+    height: 2.7rem;
+    cursor: pointer;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+.activeOrdersContent {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 1rem 0;
+}
+
+.orderInfoWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+/*---------------------------------------------------finishedordercards-----------------------------------------*/
+
+.finishedOrderWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.fnshOrdWrapp {
+    height: 100%;
+    width: 100%;
+}
+
+.finish-orders {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.finishedOrderCard {
+    position: relative;
+    height: 80%;
+    width: 45%;
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem black;
+}
+
+.finishOrderHeader {
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.3fr;
+}
+
+.finishOrderHdrWrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 98%;
+}
+
+.finishedOrderHeadeing {
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 3.2rem;
+    font-weight: 400;
+    font-family: 'Amatic SC', cursive;
+}
+
+.certifyIcon {
+    position: absolute;
+    left: -5%;
+    top: -10%;
+    filter: drop-shadow(0.4rem 0.3rem 0.4rem rgba(243, 238, 238, 0.815));
+    height: 7rem;
+}
+
+.finishedOrderContent {
+    background: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 98%;
+}
+
+.finishRow {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 2.7rem;
+}
+
+.finishedOrderFiled{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.finishOrderLbl{
+    color: var(--primary-black);
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.finishOrderRowWrapp{
+    overflow-y: scroll;
+    max-height: 12rem;
+}
+
+.finishOrderRow {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.finishOrderInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+}
+
+.homePageGradient {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background: linear-gradient(45deg, #222629,white,#222629);
+}
+
+.excelCsvLink:hover{
+    border-bottom: 0.3rem solid transparent;
+}
+
+.finLbl{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.finishExcelBtn {
+    height: 2.7rem;
+    cursor: pointer;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+}
+
+
+/*iPad*/
+
+@media (max-width:768px) {
+    .wrapper {
+        height: auto;
+    }
+    .active {
+        margin: 0;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+        height: 100%;
+    }
+    .activeCardsWrapper {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .pollCardicon,
+    .certifyIcon {
+        left: -3%;
+    }
+    .finishedOrderCard {
+        width: 90%;
+    }
+    .finishOrderRowWrapp,
+    .pollRowsWrapp {
+        max-height: 15rem;
+    }
+}
+
+/*Mobile telephone*/
+
+@media (max-width:500px) {
+    .pollCardicon,
+    .certifyIcon {
+        display: none;
+    }
+} 

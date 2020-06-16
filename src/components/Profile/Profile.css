@@ -1,0 +1,117 @@
+.activeProfile{
+    margin: 0 10%;
+    height: 100%;
+    background: var(--primary-black);
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 -6px var(--primary-black), 0 6px var(--primary-black), -7px 0 4px -3px rgba(153, 59, 52, 0.37), 7px 0 4px -3px rgba(153, 59, 52, 0.37);
+}
+
+
+.profileWrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.polarDiv{
+    width: 60rem;
+    height: 60rem;
+}
+
+
+.chartWrapper{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.profileGradientDiv{
+    background: linear-gradient(45deg, #222629,white,#222629);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+
+.avatarCard{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.7rem black;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.userAvatar{
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+    height: 9rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem white);
+}
+
+.avatarInfoWrapp{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.4fr ;
+    background: var(--dark-gray);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  
+}
+
+.welcomeWrap{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.welcomeWrapÙsername{
+    display: grid;
+    align-items: top;
+    justify-items: center;
+}
+
+.welLbl{
+    color: var(--light-green);
+    font-size: 2rem;
+    text-transform: lowercase;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+
+.userNmaeAvatarCardLbl{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: white;
+        font-family: 'Amatic SC', cursive;
+
+}
+
+
+
+@media (max-width:768px) {
+    .activeProfile {
+        margin: 0;
+    }
+    .profileWrapper {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 3fr;
+    }
+    .avatarCard {
+        width: 50%;
+        height: 80%;
+    }
+} 

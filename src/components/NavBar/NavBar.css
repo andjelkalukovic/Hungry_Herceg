@@ -1,0 +1,112 @@
+.nav-bar {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    margin-bottom: 1rem;
+    background-color: var(--primary-black);
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-icon {
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+    filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
+}
+
+.nav-fildes {
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr 1fr ;
+}
+
+.nav-filed {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.homeFiled{
+    background-color: var(--dark-green);
+    border-bottom-left-radius: 40%;
+}
+
+.nav-bar-icon {
+    height: 4rem;
+}
+
+.nav-text {
+    color: white;
+    display: grid;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-items: center;
+    padding-top: 0.7rem;
+}
+
+a {
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    border-bottom: 0.3rem solid transparent;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+a:hover {
+    color: var(--light-green);
+    border-bottom: 0.3rem solid var(--light-green);
+} 
+
+.homeLink{
+    color: white;
+    cursor: pointer;
+}
+
+.logoutLink{
+    cursor: pointer;
+    border-bottom: 0.3rem solid transparent;
+}
+
+.logoutLink:hover{
+    border-bottom: 0.3rem solid  rgb(153, 59, 52);
+}
+
+.icon-wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+}
+
+/*iPad*/
+@media (max-width:768px) {
+    .nav-bar {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        margin: 0 1rem 5rem 1rem;
+        align-items: center;
+    }
+    .nav-fildes {
+        display: grid;
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr;
+    }
+    .nav-filed {
+        padding-left: 1.6rem;
+    }
+}
+
+/*Mobile telephone*/
+@media (max-width:500px) {
+    .nav-bar {
+        margin: 0 1rem 9rem 1rem;
+    }
+}

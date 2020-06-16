@@ -1,0 +1,183 @@
+
+.voteWrapper{
+    background: linear-gradient(to bottom, #222629 30%, #474B4F 70%);
+}
+
+
+.activeVote{
+    margin: 0 10%;
+    height: 100%;
+    display: grid;
+    background: var(--primary-black);
+    display: grid;
+    justify-items: center;
+    box-shadow: 
+    0 -6px var(--primary-black),
+    0 6px var(--primary-black), 
+    -7px 0 4px -3px rgba(153, 59, 52, 0.37), 
+    7px 0 4px -3px rgba(153, 59, 52, 0.37);
+}
+
+.voteCard{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 60%;
+    height: 60%;
+    border-radius: 1rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem black;
+}
+
+
+.voteHeader{
+    background: linear-gradient(45deg, rgb(168, 167, 167),white,rgb(168, 167, 167));
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.voteingIcon{
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem black );
+}
+
+.voteCardInfowrapp{
+    display: grid;
+    grid-template-rows:1fr 3fr 1fr ;
+    background: linear-gradient(to right , #474B4F,#6B6E70, #474B4F);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.voteCardInfoHeader{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.voteBtnWrapp{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(45deg, #222629,white,#222629);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.voteBtn{
+    background: var(--dark-green);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    width: 30%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.voteHeaderFiled{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.voteFiledSmall{
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.voteFiledLbl{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    color:white;
+    font-weight: 600;
+}
+
+.voteListWrapp{
+    overflow-y: scroll;
+    max-height: 25rem;
+}
+
+
+.voteCardFildes{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.voteBtn:hover{
+    background: var(--light-green);
+}
+
+.voteFiledWrapp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.voteingLbl{
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.vote{
+    background: var(--dark-green);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.vote:hover{
+    background: var(--light-green);
+}
+
+
+
+.voted{
+    background: rgb(153,58,52);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.voted:hover{
+    background: #CC4D43;
+}
+
+
+/*iPad*/
+@media (max-width:768px) {
+    .activeVote {
+        margin: 0;
+        align-items: baseline;
+    }
+    .voteCard {
+        width: 70rem;
+    }
+}
+
+/*Mobile telephone*/
+@media (max-width:500px) {
+    .voteCard {
+        width: 35rem;
+    }
+}

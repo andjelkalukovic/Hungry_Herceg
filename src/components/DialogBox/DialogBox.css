@@ -1,0 +1,94 @@
+.loaderDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.dialogBoxWrapp {
+    background: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    width: 20%;
+    height: 20%;
+    border-radius: 0.8rem;
+    box-shadow: 0.1rem 0.2rem 0.2rem black;
+}
+
+.dialogInfoHeaderWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: var(--light-gray);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.dialogInfoWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.dialogBtnsWrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dialogLbl {
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+}
+
+.dialogMsgLbl {
+    color: var(--primary-black);
+    letter-spacing: 0.2rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.dialogBtnYes {
+    width: 60%;
+    background: var(--dark-green);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+.dialogBtnYes:hover {
+    background: var(--light-green);
+}
+
+.dialogBtnNo {
+    width: 60%;
+    background-color: rgb(153, 58, 52);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+.dialogBtnNo:hover {
+    background-color: rgb(182, 70, 62);
+}

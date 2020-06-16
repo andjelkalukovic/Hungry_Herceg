@@ -1,0 +1,338 @@
+.orderWrapper {
+    grid-template-columns: 1.5fr 1fr;
+    margin: 0 10%;
+    display: grid;
+    background: var(--primary-black);
+    justify-items: center;
+    box-shadow: 0 -6px var(--primary-black), 0 6px var(--primary-black), -7px 0 4px -3px rgba(153, 59, 52, 0.37), 7px 0 4px -3px rgba(153, 59, 52, 0.37);
+    height: 100%;
+}
+
+.rightCardWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.orderContent {
+    width: 100%;
+    background-color: var(--primary-black);
+    display: grid;
+    justify-items: center;
+}
+
+.smallerOrderDiv {
+    width: 80%;
+    height: 80rem;
+    background: var(--dark-gray);
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-rows: 1.1fr 0.4fr 1fr 1fr 0.2fr;
+    color: white;
+    box-shadow: 0.5rem 0.5rem 0.7rem black;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+}
+
+.orderHeadingImg {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.9)40%, rgba(71, 75, 79, 0.1), rgba(255, 255, 255, 0.9)), url('../../img/order-heading.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%, 20% 50%, 35% 0%, 30% 0, 15% 50%, 30% 100%, 26% 100%, 11% 50%, 26% 0, 24% 0, 9% 50%, 24% 100%, 0 100%);
+}
+
+.orderRestNameWrapp {
+    background: linear-gradient(to right, #474B4F, #6B6E70, #474B4F);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.orderRestNameHead {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  
+}
+
+/*Basic Order List Comp*/
+
+.basicOrderTxtWrapp {
+    overflow-y: scroll;
+    max-height: 10rem;
+    width: 100%;
+}
+
+.basicOrderInpWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.basicOrderList {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.basicOrderInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.1rem solid var(--dark-green);
+    padding: 1.9rem;
+    width: 80%;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    letter-spacing: 0.2rem;
+    border-bottom: 0.2rem solid transparent;
+}
+
+.basicOrderInput:hover {
+    border-bottom: 0.2rem solid var(--dark-green);
+}
+
+.basicOrderInput::placeholder {
+    color: white;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.basicOrderTxt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.bacisNumberDiv {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.orderQuantity {
+    color: var(--dark-green);
+    letter-spacing: 0.2rem;
+    outline: none;
+    border: none;
+    height: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+.addOrderBtn {
+    height: 3.5rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.15rem black);
+    cursor: pointer;
+}
+
+.orderBold {
+    font-weight: bolder;
+}
+
+/*Combo Order List Comp*/
+
+.comboOrderWrapp {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    margin-top: 2rem;
+}
+
+.comboOrderInptWrapp {
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+
+.comboRowWrapp {
+    overflow-y: scroll;
+    max-height: 10rem;
+    width: 100%;
+}
+
+.comboHedingWrapp {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(to right, #474B4F, #6B6E70, #474B4F);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+}
+
+/*Current Order List Comp*/
+
+.currentOrderWrapp {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr 0.5fr;
+    background: var(--dark-gray);
+    border-radius: 0.8rem;
+    color: white;
+    box-shadow: 0.5rem 0.5rem 0.7rem black;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+    height: 34rem;
+    width: 55rem;
+}
+
+.gradientCurrentOrderWrapper{
+    background: linear-gradient(to right, #474B4F, white, #474B4F);
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+.lblCenterAlign {
+    text-align: center;
+}
+
+.currentOrderFooter {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.currOrdLblWrapp {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.currOrderClmsWrapp {
+    overflow-y: scroll;
+    max-height: 10rem;
+    width: 100%;
+}
+
+.removeOrder {
+    height: 3.5rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.15rem black);
+    cursor: pointer;
+}
+
+.currentOrderTxt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.orderNowBtn {
+    background: var(--dark-green);
+    color: white;
+    cursor: pointer;
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    width: 60%;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0
+}
+
+.orderNowBtnWrap {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.orderNowBtn:hover {
+    background: var(--light-green);
+}
+
+/*iPad*/
+
+@media (max-width:768px) {
+    .orderWrapper {
+        margin: 0;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+    .currentOrderWrapp,
+    .rightCardWrapp {
+        width: 100%;
+    }
+    .rightCardContent {
+        width: 80%;
+    }
+}
+
+/*Mobile telephone*/
+
+@media (max-width:500px) {
+    .smallerOrderDiv {
+        width: 35rem;
+        padding-left: 0.4rem;
+    }
+    .rightCardContent {
+        width: auto;
+    }
+    .currentOrderWrapp {
+        width: 35rem;
+    }
+}
+
+/*laptop*/
+
+@media (min-width: 1030px) and (max-width: 1366px) {
+    .smallerOrderDiv {
+        width: 45rem;
+        height: 55.8rem;
+        font-size: 1.5rem;
+    }
+    .wrapper {
+        height: 67.8rem;
+    }
+    .mainPartWrapper {
+        height: 55.8rem;
+    }
+    .orderContent {
+        height: 55.8rem;
+    }
+    .basicOrderInput::placeholder {
+        font-size: 1rem;
+    }
+    .orderRestNameHead {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .addOrderBtn {
+        height: 2.5rem;
+    }
+    .orderNowBtn {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+    .basicOrderTxtWrapp {
+        overflow-y: scroll;
+        max-height: 40%;
+        width: 100%;
+    }
+    .basicOrderInput {
+        padding: 1.1rem;
+    }
+    .rightCardWrapp {
+        width: 35rem;
+    }
+    .currentOrderWrapp {
+        width: 34rem;
+    }
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*Background*/
+.Wrappeer {
+    background-image:linear-gradient(to top, rgba(34, 38, 41, 0.8), rgba(34, 38, 41, 0.2)), url('../../img/login-background.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/*Login*/
+.loginCard {
+    width: 34rem;
+    height: 47rem;
+    background: var(--primary-black);
+    color: white;
+    top: 51%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -49%);
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem black;
+    box-sizing: border-box;
+    padding: 7rem 3rem;
+}
+
+.logoPhoto {
+    width: 20rem;
+    position: absolute;
+    top: -10rem;
+    left: calc(50% - 10rem);
+}
+
+.loginContent {
+    text-align: center;
+    padding: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.loginContent h1 {
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.loginIntput {
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 0.2rem solid var(--dark-green);
+    padding: 1.9rem;
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+}
+
+.loginIntput:focus {
+    border-bottom: 0.2rem solid var(--light-green);
+}
+
+.loginIntput::placeholder {
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.loginBtn {
+    background: url('/img/loginIcon.png');
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    color: white;
+    padding: 1.3rem;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    margin: 1.2rem;
+}
+
+.loginBtn:hover {
+    transform: scale(1.15);
+}
+
+
+
+/*Mobile telephone*/
+@media (max-width:500px) {
+    .Wrappeer {
+        background-image:linear-gradient(to top, rgba(34, 38, 41, 0.8), rgba(34, 38, 41, 0.2)), 
+        url('../../img/login-mobile-background.jpg');
+    }
+    .loginCard {
+        background: rgba(34, 38, 41, 0.9);
+    }
+}
+
+/*iPad*/
+@media (min-width:501px) and (max-width:768px){
+    .Wrappeer {
+        background-image:linear-gradient(to top, rgba(34, 38, 41, 0.8), rgba(34, 38, 41, 0.2)), 
+        url('../../img/login-mobile-background.jpg');
+    }
+    .loginCard {
+        width: 40rem;
+        height: 50rem;
+    }
+}
